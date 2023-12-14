@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@200&family=Potta+One&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    background-color: rgb(207, 216, 220);
+}
+
+.container {
+    width: 75vw;
+    margin: auto;
+    padding-top: 2vh;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(85, 91, 96);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+table, thead, tbody, tr, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 3px 6px;
+}
+
+h1, h2{
+    padding: 10px 0px;
+}
+
+.submit-button{
+    padding: 4px 11px;
+    background: rgb(85, 91, 96);
+    color: white;
+    font-weight: 900;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#deleted{
+    display: none;
+}

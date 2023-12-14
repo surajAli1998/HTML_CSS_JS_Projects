@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Potta+One&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    display: flex;
+    background-image: url("/img/bg.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(155, 155, 219),white);
+    width: 44vw;
+    height: 95vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.snake-head{
+    background-color: red;
+    border: 1.5px solid rgb(39, 15, 15);
+    transform: scale(1.02);
+    border-radius: 8px;
+}
+
+.snake-body{
+    background: linear-gradient(red, yellow);
+    border: 1.5px solid rgb(39, 15, 15);
+    border-radius: 14px;
+}
+
+.food{
+    background: linear-gradient(aqua, navy);
+    border: 2px solid black;
+    border-radius: 13px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 6vh;
+    right: 18.3vw;
+    font-size: 2vw;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+    /* transform: scale(1.04); */
+}
+
+#highestScore{
+    position: absolute;
+    top: 15vh;
+    right: 11vw;
+    font-size: 2vw;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+}
+
+

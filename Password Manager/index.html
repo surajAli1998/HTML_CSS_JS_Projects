@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Password: Yor Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Apna Password</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Career</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Password Manager</h1>
+            <p>Hello User,
+                We're thrilled to welcome you to Apna Password! Your journey to enhanced security and simplified
+                password management begins here.
+                Here are a few key features of our app that you'll love:
+                can access them.</p>
+            <h2>Your User Ids and Passwords <span id="deleted">(Deleted!)</span></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Website</th>
+                        <th>User Id</th>
+                        <th>Password</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <h2>Add an User Id and Password</h2>
+            <form action="/submit" method="post">
+                <label for="website">Website:</label>
+                <input type="text" id="website" name="website" required>
+                <br><br>
+                <label for="userid">User Id:</label>
+                <input type="text" id="userid" name="userid" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+                <button type="submit" class="submit-button" id="submitButton">Submit</button>
+            </form>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
